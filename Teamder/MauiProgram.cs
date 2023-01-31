@@ -1,6 +1,4 @@
-﻿using Microsoft.Extensions.Logging;
-
-namespace Teamder;
+﻿namespace Teamder;
 
 public static class MauiProgram
 {
@@ -12,12 +10,21 @@ public static class MauiProgram
 			.ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("Comfortaa.ttf", "Comfortaa");
-			});
+			}).UseMauiCommunityToolkit();
 
 #if DEBUG
 		builder.Logging.AddDebug();
 #endif
+		#region View
+		builder.Services.AddSingleton<ViewPage>();
+        #endregion
 
-		return builder.Build();
+        #region ViewModel
+        builder.Services.AddTransient<ViewPage>();
+        #endregion
+
+        #region Service
+        #endregion
+        return builder.Build();
 	}
 }
