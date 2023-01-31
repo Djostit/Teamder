@@ -1,6 +1,14 @@
-﻿namespace Teamder.ViewModels
+﻿using CommunityToolkit.Mvvm.Input;
+using System.Diagnostics;
+
+namespace Teamder.ViewModels
 {
-    internal class ViewViewModel : BaseViewModel
+    public partial class ViewViewModel : BaseViewModel
     {
+        [RelayCommand]
+        public void Test()
+        {
+            Debug.WriteLine("Тест");
+        }
     }
 }
