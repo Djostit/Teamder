@@ -7,30 +7,30 @@ using System.Threading.Tasks;
 
 namespace Teamder.ViewModels
 {
-    public partial class SingInVM : BaseViewModel
+    public partial class SignUpVM : BaseViewModel
     {
         [ObservableProperty]
-        [NotifyCanExecuteChangedFor(nameof(SignInCommand))]
-        public string login;
+        [NotifyCanExecuteChangedFor(nameof(SignUpCommand))]
+        public string username;
 
         [ObservableProperty]
-        [NotifyCanExecuteChangedFor(nameof(SignInCommand))]
+        [NotifyCanExecuteChangedFor(nameof(SignUpCommand))]
         public string password;
 
         [ObservableProperty]
         public string logging = "false";
-        public bool CanSignIn  => !string.IsNullOrWhiteSpace(Login) && !string.IsNullOrWhiteSpace(Password);
+        public bool CanSignIn => !string.IsNullOrWhiteSpace(Username) && !string.IsNullOrWhiteSpace(Password);
 
-        public SingInVM()
+        public SignUpVM()
         {
             Logging = "false";
         }
 
         [RelayCommand(CanExecute = "CanSignIn")]
-        private void SignIn()
+        private void SignUp()
         {
             Logging = "true";
-            Shell.Current.DisplayAlert("Debug", Login + "\n" + Password, "ok");
+            Shell.Current.DisplayAlert("Debug", Username + "\n" + Password, "ok");
         }
     }
 }
