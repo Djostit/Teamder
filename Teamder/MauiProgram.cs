@@ -15,16 +15,14 @@ public static class MauiProgram
 #if DEBUG
 		builder.Logging.AddDebug();
 #endif
-		#region View
-		builder.Services.AddSingleton<ViewPage>();
-        #endregion
-
-        #region ViewModel
-        builder.Services.AddTransient<ViewPage>();
-        #endregion
-
+		RegisterViewsAndViewModels(builder.Services);
         #region Service
         #endregion
         return builder.Build();
 	}
+
+    static void RegisterViewsAndViewModels(in IServiceCollection services)
+	{
+        services.AddSingleton<SignInPage, SingInVM>();
+    }
 }
