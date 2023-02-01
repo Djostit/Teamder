@@ -10,13 +10,21 @@
     <ShellContent
         FlyoutItemIsVisible="False"
         Shell.FlyoutBehavior="Disabled"
-        ContentTemplate="{DataTemplate views:SignInPage}"
-        Route="SignIn" />
+        ContentTemplate="{DataTemplate views:ViewPostsPage}"
+        Route="Viewer" />
     
     <ShellContent
         FlyoutItemIsVisible="False"
         Shell.FlyoutBehavior="Disabled"
         ContentTemplate="{DataTemplate views:SignUpPage}"
         Route="SignUp" />
+    
+    <ShellContent
+        FlyoutItemIsVisible="False"
+        Shell.FlyoutBehavior="Disabled"
+        ContentTemplate="{DataTemplate views:SignInPage}"
+        Route="SignIn" />
+    
+    
 
 </Shell>

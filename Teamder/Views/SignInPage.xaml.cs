@@ -1,8 +1,8 @@
 namespace Teamder.Views;
 
-public partial class SignInPage : BasePage<SingInVM>
+public partial class SignInPage : BasePage<SignInVM>
 {
-	public SignInPage(SingInVM vm) : base(vm)
+	public SignInPage(SignInVM vm) : base(vm)
 	{
 		InitializeComponent();
 	}

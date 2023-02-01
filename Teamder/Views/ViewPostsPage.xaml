@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Teamder.Views.ViewPostsPage"
+             Title="View posts">
+    <Frame Margin="10"
+        WidthRequest="{OnPlatform WinUI=400}" HorizontalOptions="{OnPlatform WinUI=Center}">
+        <VerticalStackLayout HorizontalOptions="Fill" HeightRequest="50" Spacing="6">
+            <Label FontSize="18" FontAttributes="Bold">UserName</Label>
+            <BoxView HeightRequest="2" HorizontalOptions="Fill" BackgroundColor="Gray"/>
+            <Label>Всем привет я илья новкиов, я ищу команду для игры в свинку пепу. ищу только адекватных взрослых людей</Label>
+        </VerticalStackLayout>
+    </Frame>
+        
+</ContentPage>

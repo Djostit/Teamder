@@ -1,7 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.Input;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,9 +8,8 @@ using Teamder.Services;
 
 namespace Teamder.ViewModels
 {
-    public partial class SingInVM : BaseViewModel
+    public partial class SignInVM : BaseViewModel
     {
-        private readonly UserService _userService;
         [ObservableProperty]
         [NotifyCanExecuteChangedFor(nameof(SignInCommand))]
         public string login;
@@ -24,19 +22,16 @@ namespace Teamder.ViewModels
         public string logging = "false";
         public bool CanSignIn  => !string.IsNullOrWhiteSpace(Login) && !string.IsNullOrWhiteSpace(Password);
 
-        public SingInVM(UserService userService)
+        public SignInVM()
         {
-            _userService = userService;
             Logging = "false";
         }
 
         [RelayCommand(CanExecute = "CanSignIn")]
-        private async Task SignIn()
+        private void SignIn()
         {
             Logging = "true";
-            //Shell.Current.DisplayAlert("Debug", Login + "\n" + Password, "ok");
-
-            await _userService.AuthorisationUserAsync(Login, Password);
+            Shell.Current.DisplayAlert("Debug", Login + "\n" + Password, "ok");
         }
     }
 }
