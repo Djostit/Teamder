@@ -5,9 +5,9 @@ VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teamder", "Teamder\Teamder.csproj", "{C79D1411-5C83-45E3-A4CD-51CDFBD8168C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamderStaff", "TeamderStaff\TeamderStaff.csproj", "{8CB5C593-0513-4E4B-8EC2-650AFE9D5B41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeamderStaff", "TeamderStaff\TeamderStaff.csproj", "{8CB5C593-0513-4E4B-8EC2-650AFE9D5B41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamderAPI", "TeamderAPI\TeamderAPI.csproj", "{416DB47F-0C7B-4175-BE83-81708B15EAA7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamderAPI", "TeamderAPI\TeamderAPI.csproj", "{AF9DBCE4-A111-4C1E-96B3-60882DCB84D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +25,10 @@ Global
 		{8CB5C593-0513-4E4B-8EC2-650AFE9D5B41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CB5C593-0513-4E4B-8EC2-650AFE9D5B41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CB5C593-0513-4E4B-8EC2-650AFE9D5B41}.Release|Any CPU.Build.0 = Release|Any CPU
-		{416DB47F-0C7B-4175-BE83-81708B15EAA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{416DB47F-0C7B-4175-BE83-81708B15EAA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{416DB47F-0C7B-4175-BE83-81708B15EAA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{416DB47F-0C7B-4175-BE83-81708B15EAA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF9DBCE4-A111-4C1E-96B3-60882DCB84D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF9DBCE4-A111-4C1E-96B3-60882DCB84D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF9DBCE4-A111-4C1E-96B3-60882DCB84D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF9DBCE4-A111-4C1E-96B3-60882DCB84D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
