@@ -1,4 +1,6 @@
-﻿namespace Teamder;
+﻿using Teamder.Services;
+
+namespace Teamder;
 
 public static class MauiProgram
 {
@@ -24,6 +26,7 @@ public static class MauiProgram
         #endregion
 
         #region Service
+		builder.Services.AddTransient<UserService>();
         #endregion
         return builder.Build();
 	}
