@@ -27,6 +27,7 @@ public static class MauiProgram
     static void RegisterViewsAndViewModels(in IServiceCollection services)
 	{
         services.AddSingleton<SignInPage, SignInVM>();
+        services.AddSingleton<ViewPostsPage>();
         services.AddSingleton<SignUpPage, SignUpVM>();
     }
 }

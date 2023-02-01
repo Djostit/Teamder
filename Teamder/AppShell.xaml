@@ -10,6 +10,12 @@
     <ShellContent
         FlyoutItemIsVisible="False"
         Shell.FlyoutBehavior="Disabled"
+        ContentTemplate="{DataTemplate views:ViewPostsPage}"
+        Route="Viewer" />
+    
+    <ShellContent
+        FlyoutItemIsVisible="False"
+        Shell.FlyoutBehavior="Disabled"
         ContentTemplate="{DataTemplate views:SignInPage}"
         Route="SignIn" />
     
