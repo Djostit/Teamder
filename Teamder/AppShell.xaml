@@ -7,18 +7,19 @@
     xmlns:views="clr-namespace:Teamder.Views"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
-        FlyoutItemIsVisible="False"
-        Shell.FlyoutBehavior="Disabled"
-        ContentTemplate="{DataTemplate views:ViewPostsPage}"
-        Route="Viewer" />
     
     <ShellContent
         FlyoutItemIsVisible="False"
         Shell.FlyoutBehavior="Disabled"
         ContentTemplate="{DataTemplate views:SignInPage}"
         Route="SignIn" />
-    
+
+    <ShellContent
+        FlyoutItemIsVisible="False"
+        Shell.FlyoutBehavior="Disabled"
+        ContentTemplate="{DataTemplate views:ViewPostsPage}"
+        Route="Viewer" />
+
     <ShellContent
         FlyoutItemIsVisible="False"
         Shell.FlyoutBehavior="Disabled"

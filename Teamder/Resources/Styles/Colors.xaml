@@ -42,4 +42,12 @@
     <Color x:Key="Blue200Accent">#72ACF1</Color>
     <Color x:Key="Blue300Accent">#A7CBF6</Color>
 
+
+    <Color x:Key="Black100">#252525</Color>
+    <Color x:Key="Black200">#383838</Color>
+    <Color x:Key="Black300">#2c2c2c</Color>
+    <Color x:Key="Black150">#151515</Color>
+    <Color x:Key="Red">#c9302d</Color>
+
+
 </ResourceDictionary>
