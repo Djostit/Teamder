@@ -9,22 +9,32 @@
       xmlns:pages="clr-namespace:Teamder.Views"
       xmlns:mct="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
       Title="Авторизация">
-    <Frame CornerRadius="15" WidthRequest="300" BackgroundColor="{StaticResource Black300}" BorderColor="{StaticResource Black200}">
-        <VerticalStackLayout Spacing="5" HorizontalOptions="Center">
-            <Image Source="/Resources/Images/discord-mark-white.svg"/>
+    <Frame CornerRadius="15"  WidthRequest="350" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Margin="15" BackgroundColor="{StaticResource Black100}" BorderColor="{StaticResource Black200}">
+        <FlexLayout WidthRequest="300" Direction="Column" Margin="5" AlignItems="Center">
+            <Image Source="discord-mark-white.svg"/>
             <Label StyleClass="Headline">Авторизуйтесь через Discord</Label>
             <Label StyleClass="Subline">Это необходимо для создания записей</Label>
-            <Button Margin="0,30,0,0" Text="Авторизоваться"/>
+            <Button WidthRequest="270" BackgroundColor="{StaticResource Blue}" Margin="0,20,0,0" Text="Авторизоваться"/>
             <Label StyleClass="Subline">Ещё нет Discord-аккаунта?</Label>
             <Label>
                 <Label.FormattedText>
                     <FormattedString>
-                        <Span TextColor="{StaticResource Blue200Accent}">Авторизоваться</Span>
-                        <Span> или </Span>
-                        <Span TextColor="{StaticResource Blue200Accent}">Войти позже</Span>
+                        <Span TextColor="{StaticResource Blue}">
+                            Авторизоваться
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer />
+                            </Span.GestureRecognizers>
+                        </Span>
+                        <Span Text=" или "/>
+                        <Span TextColor="{StaticResource Blue}">
+                            Войти позже
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer />
+                            </Span.GestureRecognizers>
+                        </Span>
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
-        </VerticalStackLayout>
+        </FlexLayout>
     </Frame>
 </pages:BasePage>

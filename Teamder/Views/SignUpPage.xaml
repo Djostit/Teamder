@@ -8,16 +8,5 @@
              xmlns:pages="clr-namespace:Teamder.Views"
              xmlns:mct="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              Title="Регистрация">
-    <VerticalStackLayout Spacing="5" WidthRequest="{OnPlatform WinUI=300}" HorizontalOptions="{OnPlatform WinUI=Center}" VerticalOptions="{OnPlatform WinUI=Center}">
-        <Entry Text="{Binding Username, Mode=TwoWay}" Placeholder="Логин" HorizontalOptions="Fill"/>
-        <Entry Text="{Binding Password, Mode=TwoWay}" Placeholder="Пароль" HorizontalOptions="Fill"/>
-        <Grid HorizontalOptions="Fill" 
-            mct:StateContainer.CurrentState="{Binding Logging}"
-            mct:StateContainer.ShouldAnimateOnStateChange="True">
-            <mct:StateContainer.StateViews>
-                <Button Command="{Binding SignUpCommand}" mct:StateView.StateKey="false" Text="Регистрация" />
-                <ActivityIndicator IsRunning="true" mct:StateView.StateKey="true"/>
-            </mct:StateContainer.StateViews>
-        </Grid>
-    </VerticalStackLayout>
+    
 </pages:BasePage>

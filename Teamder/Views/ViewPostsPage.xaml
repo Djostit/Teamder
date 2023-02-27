@@ -5,55 +5,5 @@
              Shell.BackgroundColor="{StaticResource Gray950}"
              BackgroundColor="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray700}}"
              Title="Записи">
-    <Shell.TitleView>
-        <Grid HorizontalOptions="Fill">
-            <Label TextColor="White" FontSize="28" Margin="2" VerticalOptions="Center">Записи</Label>
-            <Button ZIndex="2" HorizontalOptions="{OnIdiom Phone=End, Desktop=Center}" TextColor="White" Margin="2" WidthRequest="{OnIdiom Phone=200,Desktop=380}" Padding="4" Text="Создать пост">
-                <Button.Background>
-                    <LinearGradientBrush>
-                        <LinearGradientBrush.GradientStops>
-                            <GradientStop Offset="0" Color="Blue"/>
-                            <GradientStop Offset="0.5" Color="BlueViolet"/>
-                            <GradientStop Offset="1" Color="Purple"/>
-                        </LinearGradientBrush.GradientStops>
-                    </LinearGradientBrush>
-                </Button.Background>
-            </Button>
-        </Grid>
-    </Shell.TitleView>
-    <ScrollView>
-        <VerticalStackLayout WidthRequest="{OnPlatform WinUI=400}" HorizontalOptions="{OnPlatform WinUI=Center}">
-            <Frame HasShadow="True" Padding="10" Margin="10">
-                <VerticalStackLayout HorizontalOptions="Fill"  Spacing="6">
-                    <Frame StyleClass="Hoverable" Padding="5">
-                        <HorizontalStackLayout>
-                            <Ellipse WidthRequest="30" HeightRequest="30">
-                                <Ellipse.Fill>
-                                    <LinearGradientBrush>
-                                        <LinearGradientBrush.GradientStops>
-                                            <GradientStop Offset="0" Color="Pink"/>
-                                            <GradientStop Offset="1" Color="Purple"/>
-                                        </LinearGradientBrush.GradientStops>
-                                    </LinearGradientBrush>
-                                </Ellipse.Fill>
-                            </Ellipse>
-                            <Label VerticalOptions="Center" Margin="10,0,0,0">Rust</Label>
-                        </HorizontalStackLayout>
-                    </Frame>
-                    <Label FontSize="18" FontAttributes="Bold">Всем привет я илья новкиов, я ищу команду для игры в свинку пепу. Ищу только адекватных взрослых людей для игры. Это я</Label>
-                    <Image>
-                        <Image.Source>
-                            <UriImageSource Uri="https://steamuserimages-a.akamaihd.net/ugc/770611889396775167/43B3C3D6F7C6AE03E1EC4ADAC4FE2A8FF78C9E08/"/>
-                        </Image.Source>
-                    </Image>
-                        <FlexLayout HeightRequest="20"  JustifyContent="SpaceBetween">
-                        <Label>Илья новиков</Label>
-                        <Label TextDecorations="Underline" TextColor="{StaticResource Primary}">iliya#4312</Label>
-                    </FlexLayout>
-                    <Button StyleClass="Outline" Text="Откликнуться"/>
-                </VerticalStackLayout>
-            </Frame>
-            
-        </VerticalStackLayout>
-    </ScrollView>
+
 </ContentPage>
