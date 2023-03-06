@@ -9,13 +9,13 @@
       xmlns:pages="clr-namespace:Teamder.Views"
       xmlns:mct="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
       Title="Авторизация">
-    <Frame CornerRadius="15"  WidthRequest="350" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Margin="15" BackgroundColor="{StaticResource Black100}" BorderColor="{StaticResource Black200}">
-        <FlexLayout WidthRequest="300" Direction="Column" Margin="5" AlignItems="Center">
-            <Image Source="discord-mark-white.svg"/>
-            <Label StyleClass="Headline">Авторизуйтесь через Discord</Label>
+    <Frame CornerRadius="15" Padding="10,0,20,20" WidthRequest="320" HorizontalOptions="Center" VerticalOptions="Center" Margin="15" BackgroundColor="{StaticResource Black100}" BorderColor="{StaticResource Black200}">
+        <FlexLayout WidthRequest="300" Direction="Column" HorizontalOptions="StartAndExpand" AlignItems="Center">
+            <Image Margin="0,10,0,0" WidthRequest="105" HeightRequest="60" Source="discord_mark_white.png"/>
+            <Label Margin="0,15,0,5" StyleClass="Headline">Авторизуйтесь через Discord</Label>
             <Label StyleClass="Subline">Это необходимо для создания записей</Label>
-            <Button WidthRequest="270" BackgroundColor="{StaticResource Blue}" Margin="0,20,0,0" Text="Авторизоваться"/>
-            <Label StyleClass="Subline">Ещё нет Discord-аккаунта?</Label>
+            <Button WidthRequest="240" BackgroundColor="{StaticResource Blue}" Margin="0,20,0,10" Text="Авторизоваться"/>
+            <Label Margin="0,0,0,3" StyleClass="Subline">Ещё нет Discord-аккаунта?</Label>
             <Label>
                 <Label.FormattedText>
                     <FormattedString>

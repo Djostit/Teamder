@@ -5,13 +5,19 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
     <Style Class="Headline" TargetType="Label" BaseResourceKey="Base">
-        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="FontFamily" Value="Comfortaa"/>
         <Setter Property="TextColor" Value="White"/>
     </Style>
 
     <Style Class="Subline" TargetType="Label" BaseResourceKey="Base">
-        <Setter Property="FontSize" Value="13"/>
+        <Setter Property="FontSize" Value="11"/>
+        <Setter Property="FontFamily" Value="Comfortaa"/>
         <Setter Property="TextColor" Value="{StaticResource Gray250}"/>
     </Style>
 
+    <Style TargetType="Button">
+        <Setter Property="FontFamily" Value="Comfortaa"/>
+    </Style>
+    
 </ResourceDictionary>
